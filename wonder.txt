@@ -1,0 +1,53 @@
+v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:712:13
+
+NormalModuleFactory.js:273
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:273:22
+
+NormalModuleFactory.js:402
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:402:22
+
+NormalModuleFactory.js:121
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:121:11
+
+NormalModuleFactory.js:576
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:576:23
+
+async.js:2830
+[v15.6.0]/[shopify-packer]/[neo-async]/async.js:2830:7
+
+async.js:2925 done
+[v15.6.0]/[shopify-packer]/[neo-async]/async.js:2925:13
+
+child-compiler.js:169
+[v15.6.0]/[shopify-packer]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+
+Compiler.js:534
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compiler.js:534:11
+
+Compiler.js:1087
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compiler.js:1087:17
+
+Hook.js:154 AsyncSeriesHook.lazyCompileHook
+[v15.6.0]/[shopify-packer]/[webpack]/[tapable]/lib/Hook.js:154:20
+
+Compiler.js:1083
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compiler.js:1083:33
+
+Compilation.js:2424
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compilation.js:2424:11
+
+Hook.js:154 AsyncSeriesHook.lazyCompileHook
+[v15.6.0]/[shopify-packer]/[webpack]/[tapable]/lib/Hook.js:154:20
+
+Compilation.js:2417
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compilation.js:2417:38
+
+2 ERRORS in child compilations (Use 'stats.children: true' resp. '--stats-children' for more details)
+webpack 5.28.0 compiled with 16 errors in 585 ms
+| Compiling...
+↑ Uploading to Shopify...
+i Deploy Mode: replace
+i Environment: development
+
+/ Compiling...Terminate batch job (Y/N)?
+Terminate batch job (Y/N)? y
