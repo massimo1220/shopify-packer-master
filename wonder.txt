@@ -1,0 +1,305 @@
+Hi there,
+
+shopify-packer was working fine until today I created a new repo for another store, and without realising I had installed shopify-packer globally, I installed it again. Now none of my repositories work, I'm really stuck and urgently need to get things runing again! When I run packer start on any repo, I get the following: Any help much appreciated!
+
+`
+packer start
+Custom webpack configuration found ...\dev.config.js
+| Compiling...Failed to compile.
+
+[object Object]
+
+[object Object]
+
+[object Object]
+
+[object Object]
+
+[object Object]
+
+[object Object]
+
+[object Object]
+
+[object Object]
+
+[object Object]
+
+[object Object]
+
+[object Object]
+
+[object Object]
+
+[object Object]
+
+[object Object]
+
+assets by path ../templates/.liquid 24 bytes 20 assets
+assets by path ../snippets/ 6.95 KiB
+asset ..\snippets\script-tags.liquid 3.47 KiB [emitted]
+asset ..\snippets\style-tags.liquid 3.47 KiB [emitted]
+asset ../snippets/.gitkeep 0 bytes [emitted] [from: src/snippets/.gitkeep] [copied]
+assets by path ../config/.json 371 bytes
+asset ../config/settings_schema.json 306 bytes [emitted] [from: src/config/settings_schema.json] [copied]
+asset ../config/settings_data.json 65 bytes [emitted] [from: src/config/settings_data.json] [copied]
+asset runtime.js 37.5 KiB [emitted] (name: runtime)
+asset ../layout/theme.liquid 631 bytes [emitted] [from: src/layout/theme.liquid] [copied]
+asset ../locales/en.default.json 3 bytes [emitted] [from: src/locales/en.default.json] [copied]
+asset ../sections/.gitkeep 0 bytes [emitted] [from: src/sections/.gitkeep] [copied]
+asset .gitkeep 0 bytes [emitted] [from: src/assets/.gitkeep] [copied]
+runtime modules 24.7 KiB 8 modules
+
+ERROR in layout.theme
+Module not found: Error: Recursion in resolving
+Stack:
+undefined: () \AppData\Roaming\nvm\v15.6.0\node_modules@hayes0724\shopify-packer\src\webpack\hot-client.js
+
+ERROR in layout.theme
+Module not found: Error: Recursion in resolving
+Stack:
+undefined: () \src\scripts\layout\theme.js
+
+ERROR in template.collection
+Module not found: Error: Recursion in resolving
+Stack:
+undefined: () \AppData\Roaming\nvm\v15.6.0\node_modules@hayes0724\shopify-packer\src\webpack\hot-client.js
+
+ERROR in template.collection
+Module not found: Error: Recursion in resolving
+Stack:
+undefined: () \src\scripts\templates\collection.js
+
+ERROR in template.index
+Module not found: Error: Recursion in resolving
+Stack:
+undefined: () \AppData\Roaming\nvm\v15.6.0\node_modules@hayes0724\shopify-packer\src\webpack\hot-client.js
+
+ERROR in template.index
+Module not found: Error: Recursion in resolving
+Stack:
+undefined: () \src\scripts\templates\index.js
+
+ERROR in template.login
+Module not found: Error: Recursion in resolving
+Stack:
+undefined: () \AppData\Roaming\nvm\v15.6.0\node_modules@hayes0724\shopify-packer\src\webpack\hot-client.js
+
+ERROR in template.login
+Module not found: Error: Recursion in resolving
+Stack:
+undefined: () \src\scripts\templates\customers\login.js
+
+ERROR in template.product
+Module not found: Error: Recursion in resolving
+Stack:
+undefined: () \AppData\Roaming\nvm\v15.6.0\node_modules@hayes0724\shopify-packer\src\webpack\hot-client.js
+
+ERROR in template.product
+Module not found: Error: Recursion in resolving
+Stack:
+undefined: () \src\scripts\templates\product.js
+
+ERROR in template.register
+Module not found: Error: Recursion in resolving
+Stack:
+undefined: () \AppData\Roaming\nvm\v15.6.0\node_modules@hayes0724\shopify-packer\src\webpack\hot-client.js
+
+ERROR in template.register
+Module not found: Error: Recursion in resolving
+Stack:
+undefined: () \src\scripts\templates\customers\register.js
+
+ERROR in Error: Child compilation failed:
+Module not found: Error: Recursion in resolving
+Stack:
+undefined: () \AppData\Roaming\nvm\v15.6.0\node_modules@hayes0724\shop ify-packer\node_modules\html-webpack-plugin\lib\loader.js
+ModuleNotFoundError: Module not found: Error: Recursion in resolving
+Stack:
+undefined: () \AppData\Roaming\nvm\v15.6.0\node_modules@hayes0724\shop ify-packer\node_modules\html-webpack-plugin\lib\loader.js
+
+Compilation.js:1668
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compilation.js:1668:28
+
+NormalModuleFactory.js:712
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:712:13
+
+NormalModuleFactory.js:273
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:273:22
+
+NormalModuleFactory.js:402
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:402:22
+
+NormalModuleFactory.js:121
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:121:11
+
+NormalModuleFactory.js:576
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:576:23
+
+async.js:2830
+[v15.6.0]/[shopify-packer]/[neo-async]/async.js:2830:7
+
+async.js:2925 done
+[v15.6.0]/[shopify-packer]/[neo-async]/async.js:2925:13
+
+Module not found: Error: Recursion in resolving
+
+Stack:
+
+undefined: () \AppData\Roaming\nvm\v15.6.0\node_modules@hayes0724\shop ify-packer\node_modules\html-webpack-plugin\lib\loader.js
+
+ModuleNotFoundError: Module not found: Error: Recursion in resolving
+
+Stack:
+
+undefined: () \AppData\Roaming\nvm\v15.6.0\node_modules@hayes0724\shop ify-packer\node_modules\html-webpack-plugin\lib\loader.js
+
+Compilation.js:1668
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compilation.js:1668:28
+
+NormalModuleFactory.js:712
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:712:13
+
+NormalModuleFactory.js:273
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:273:22
+
+NormalModuleFactory.js:402
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:402:22
+
+NormalModuleFactory.js:121
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:121:11
+
+NormalModuleFactory.js:576
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:576:23
+
+async.js:2830
+[v15.6.0]/[shopify-packer]/[neo-async]/async.js:2830:7
+
+async.js:2925 done
+[v15.6.0]/[shopify-packer]/[neo-async]/async.js:2925:13
+
+child-compiler.js:169
+[v15.6.0]/[shopify-packer]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+
+Compiler.js:534
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compiler.js:534:11
+
+Compiler.js:1087
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compiler.js:1087:17
+
+Hook.js:154 AsyncSeriesHook.lazyCompileHook
+[v15.6.0]/[shopify-packer]/[webpack]/[tapable]/lib/Hook.js:154:20
+
+Compiler.js:1083
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compiler.js:1083:33
+
+Compilation.js:2424
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compilation.js:2424:11
+
+Hook.js:154 AsyncSeriesHook.lazyCompileHook
+[v15.6.0]/[shopify-packer]/[webpack]/[tapable]/lib/Hook.js:154:20
+
+Compilation.js:2417
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compilation.js:2417:38
+
+ERROR in Error: Child compilation failed:
+Module not found: Error: Recursion in resolving
+Stack:
+undefined: () \AppData\Roaming\nvm\v15.6.0\node_modules@hayes0724\shop ify-packer\node_modules\html-webpack-plugin\lib\loader.js
+ModuleNotFoundError: Module not found: Error: Recursion in resolving
+Stack:
+undefined: () \AppData\Roaming\nvm\v15.6.0\node_modules@hayes0724\shop ify-packer\node_modules\html-webpack-plugin\lib\loader.js
+
+Compilation.js:1668
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compilation.js:1668:28
+
+NormalModuleFactory.js:712
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:712:13
+
+NormalModuleFactory.js:273
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:273:22
+
+NormalModuleFactory.js:402
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:402:22
+
+NormalModuleFactory.js:121
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:121:11
+
+NormalModuleFactory.js:576
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:576:23
+
+async.js:2830
+[v15.6.0]/[shopify-packer]/[neo-async]/async.js:2830:7
+
+async.js:2925 done
+[v15.6.0]/[shopify-packer]/[neo-async]/async.js:2925:13
+
+Module not found: Error: Recursion in resolving
+
+Stack:
+
+undefined: () \AppData\Roaming\nvm\v15.6.0\node_modules@hayes0724\shop ify-packer\node_modules\html-webpack-plugin\lib\loader.js
+
+ModuleNotFoundError: Module not found: Error: Recursion in resolving
+
+Stack:
+
+undefined: () \AppData\Roaming\nvm\v15.6.0\node_modules@hayes0724\shop ify-packer\node_modules\html-webpack-plugin\lib\loader.js
+
+Compilation.js:1668
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compilation.js:1668:28
+
+NormalModuleFactory.js:712
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:712:13
+
+NormalModuleFactory.js:273
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:273:22
+
+NormalModuleFactory.js:402
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:402:22
+
+NormalModuleFactory.js:121
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:121:11
+
+NormalModuleFactory.js:576
+[v15.6.0]/[shopify-packer]/[webpack]/lib/NormalModuleFactory.js:576:23
+
+async.js:2830
+[v15.6.0]/[shopify-packer]/[neo-async]/async.js:2830:7
+
+async.js:2925 done
+[v15.6.0]/[shopify-packer]/[neo-async]/async.js:2925:13
+
+child-compiler.js:169
+[v15.6.0]/[shopify-packer]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+
+Compiler.js:534
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compiler.js:534:11
+
+Compiler.js:1087
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compiler.js:1087:17
+
+Hook.js:154 AsyncSeriesHook.lazyCompileHook
+[v15.6.0]/[shopify-packer]/[webpack]/[tapable]/lib/Hook.js:154:20
+
+Compiler.js:1083
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compiler.js:1083:33
+
+Compilation.js:2424
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compilation.js:2424:11
+
+Hook.js:154 AsyncSeriesHook.lazyCompileHook
+[v15.6.0]/[shopify-packer]/[webpack]/[tapable]/lib/Hook.js:154:20
+
+Compilation.js:2417
+[v15.6.0]/[shopify-packer]/[webpack]/lib/Compilation.js:2417:38
+
+2 ERRORS in child compilations (Use 'stats.children: true' resp. '--stats-children' for more details)
+webpack 5.28.0 compiled with 16 errors in 585 ms
+| Compiling...
+↑ Uploading to Shopify...
+i Deploy Mode: replace
+i Environment: development
+
+/ Compiling...Terminate batch job (Y/N)?
+Terminate batch job (Y/N)? y
