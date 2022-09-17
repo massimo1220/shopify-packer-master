@@ -1,0 +1,6 @@
+Programming Languages:
+- JavaScript / TypeScript  / Python / PHP / Rust / Solidity
+
+Blockchain:
+- NFT Marketplace / Yield Farming / Defi / Dex / Dapp / Polkadot / ICO
+- TOKENS on Solana and Ethereum Network using *Rust and Solidity*
