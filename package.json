@@ -72,7 +72,7 @@
     "sass-loader": "^13.1.0",
     "style-loader": "^2.0.0",
     "stylelint": "^13.12.0",
-    "stylelint-webpack-plugin": "^2.1.1",
+    "stylelint-webpack-plugin": "^3.3.0",
     "table": "^6.8.0",
     "tapable": "^2.0.0",
     "url-loader": "^4.1.1",
